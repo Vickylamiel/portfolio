@@ -6,20 +6,27 @@ a{
 }
 
 a:hover{
-    color: #000;
+    /* color: #000; */
+    opacity: 1;
+}
+
+html, *, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1440px;
+    /* width: 100%; */
 }
 
 body{
     color: #40514E;
     font-family: 'Merriweather', serif;
-    margin: 0;
     text-align: center;
     box-sizing: border-box;
     background: #D8D9CF;
 }
 
 hr{
-    border-color: #EAF6F6;
     border-style: none;
     border-top-style: dotted;
     border-width: 6px;
@@ -39,20 +46,16 @@ h2{
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
     font-weight: normal;
-    padding-bottom: 10px;
+    height: 100px;
 }
 
 h3{
     color: #7A4069;
-    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
 }
 
 p{
     line-height: 2;
-}
-
-.navbar{
-    background-color: #af2828;
 }
 
 .navbar-brand{
@@ -98,24 +101,32 @@ p{
     object-fit: fill;
     transition: all 500ms ease-in-out;
     position: relative;
+    box-shadow: 4px 5px 4px #000;
+}
+
+.profile-text{
+    width: 50%;
+    max-width: 800px;
+    text-align: center;
+    font-size: 14px;
+    margin: auto;
 }
 
 .overlay{
     position: absolute;
-    bottom: 100px;
+    bottom: 10px;
     top: auto;
     left: 25%;
     right: 25%;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5);
-    /* width: 50%; */
     transition: .5s ease;
     opacity: 0;
     font-size: 20px;
     padding: 20px;
     text-align: center;
     z-index: 4;
-    color: #7A4069;
+    color: #f1f1f1;
 }
 
 .profile-img-contianer:hover .overlay{
@@ -128,7 +139,6 @@ p{
     height: auto;
     object-fit: contain;
     cursor: pointer;
-    /* opacity: 1; */
 }
 
 .middle-container{
@@ -136,33 +146,44 @@ p{
     background: #D8D9CF;
 }
 
-.profile-header{
-    font-size: 70px;
-    color: #7A4069;
-}
-
 .bottom-container{
-    background-color: #af2828;
+    background-color: #212529;
     padding: 50px 0 20px;
 }
 
-.skill-row{
+.skills__one{
     width: 50%;
-    margin: 100px auto 100px auto;
     text-align: left;   
 }
 
-.skill-text{
+.section__one__skills{
+    display: flex;
+    justify-content: center;
+    height: 350px;
+}
+
+.skills__one__text{
+    font-size: 12px;
+}
+
+.certification{
+    text-align: center;
+}
+
+.section__two__skills{
+    text-align: center;
+    height: 50px;
+
+}
+
+.certification ul, .section__two__skills ul{
+    display: inline-block;
+    text-align: left;
     font-size: 12px;
 }
 
 .pro{
     text-decoration: underline;
-}
-
-.intro{
-    width: 30%;
-    margin: auto;
 }
 
 .contact-message{
@@ -176,41 +197,27 @@ p{
     padding: 20px 0;
 }
 
-.computer-img{
+.skills__one__img{
     width: 25%;
     float: left;
     margin-right: 30px;
-}
-
-.cooking-img{
-    width: 25%;
-    float: right;
-    margin-left: 30px;
-}
-
-    /* .btn {
-        background: #ac1308;
-        background-image: -webkit-linear-gradient(top, #ac1308, #11999e);
-        background-image: -moz-linear-gradient(top, #ac1308, #11999e);
-        background-image: -ms-linear-gradient(top, #ac1308, #11999e);
-        background-image: -o-linear-gradient(top, #ac1308, #11999e);
-        background-image: linear-gradient(to bottom, #ac1308, #11999e);
-        -webkit-border-radius: 8;
-        -moz-border-radius: 8;
-        border-radius: 8px;
-        font-family: 'Montserrat', sans-serif;
-        color: #ffffff;
-        font-size: 20px;
-        padding: 10px 20px 10px 20px;
-        text-decoration: none;
-      } */
+}   
       
-      .btn:hover {
-        background: #ec4e39;
-        background-image: -webkit-linear-gradient(top, #ec4e39, #2bc4ad);
-        background-image: -moz-linear-gradient(top, #ec4e39, #2bc4ad);
-        background-image: -ms-linear-gradient(top, #ec4e39, #2bc4ad);
-        background-image: -o-linear-gradient(top, #ec4e39, #2bc4ad);
-        background-image: linear-gradient(to bottom, #ec4e39, #2bc4ad);
-        text-decoration: none;
-      }
+.btn{
+    padding: 1rem 2.5rem;
+}
+
+      
+.btn:hover {
+    background: #ec4e39;
+    background-image: -webkit-linear-gradient(top, #ec4e39, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #ec4e39, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #ec4e39, #2bc4ad);
+    background-image: -o-linear-gradient(top, #ec4e39, #2bc4ad);
+    background-image: linear-gradient(to bottom, #ec4e39, #2bc4ad);
+    text-decoration: none;
+}
+
+.footer-link{
+    font-size: 2rem;
+}
