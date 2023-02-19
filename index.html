@@ -1,139 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ekeh Victoria</title>
-    <link rel="icon" href="./assets/favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/styles.css">
-</head>
-<body>
-  <div class="main-container container">
-    <nav class="navbar navbar-dark bg-dark fixed-top" variant="primary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">La Miel</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-end offcanvas-box" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">La Miel</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <link rel="icon" href="./assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <nav class="navbar navbar-dark bg-dark fixed-top" variant="primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">La Miel</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end offcanvas-box"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">La Miel</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <i class="fa-solid fa-house"></i>
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <i class="fa-solid fa-user"></i>
+                  <a class="nav-link active" aria-current="page" href="#about"
+                    >About</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <i class="fa-solid fa-envelope"></i>
+                  <a class="nav-link active" aria-current="page" href="#contact"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <i class="fa-solid fa-house"></i>
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <i class="fa-solid fa-user"></i>
-                <a class="nav-link active" aria-current="page" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <i class="fa-solid fa-envelope"></i>
-                <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
-              </li>
-            </ul>
+        </div>
+      </nav>
+
+      <header class="header-container">
+        <div class="top-container">
+          <div class="header-text">
+            <h1>I'm Victoria.</h1>
+            <h2>a <span class="pro">pro</span>grammer.</h2>
+          </div>
+
+          <div class="profile-img-contianer">
+            <img
+              class="profile-img img-fluid"
+              src="./assets/images/Vicky's image.jpeg"
+              alt="profilepic"
+            />
+            <div class="overlay">Ekeh Victoria</div>
           </div>
         </div>
-      </div>
-    </nav>
+      </header>
 
-    <header class="header-container">
-      <div class="top-container">
-        <div class="header-text">
-          <h1>I'm Victoria.</h1>
-          <h2>a <span class="pro">pro</span>grammer.</h2>
-        </div>
-
-        <div class="profile-img-contianer">
-          <img class="profile-img img-fluid" src="./assets/images/Vicky's image.jpeg" alt="profilepic">
-          <div class="overlay">Ekeh Victoria</div>
-        </div>
-      </div>
-    </header>
-
-    <main class="about-container">
-      <section class="middle-container">
-        <div id="about">
+      <main class="about-container">
+        <section class="middle-container">
+          <div id="about">
             <div class="profile">
               <h2 class="profile-header">About</h2>
-              <p class="profile-text">Victoria is a Frontend Developer who is passionate about developing usable user interfaces.
-                A Result-driven individual with leadership ability and exceptional transferable skills looking to write and deploy useful and enable codes that helps solve user problems while increasing value.
-                 Team oriented and focused on developing and improving technical knowledge for optimum productivity.
+              <p class="profile-text">
+                Victoria is a Frontend Developer who is passionate about
+                developing usable user interfaces. A Result-driven individual
+                with leadership ability and exceptional transferable skills
+                looking to write and deploy useful and enable codes that helps
+                solve user problems while increasing value. Team oriented and
+                focused on developing and improving technical knowledge for
+                optimum productivity.
               </p>
             </div>
-            <hr>
+            <hr />
 
             <div class="skills__container">
               <h2>Skills.</h2>
-              <div class="section__one__skills col">
+              <div class="section__one__skills">
                 <div class="skills__one">
-                  <img class="skills__one__img" src="./assets/images/computer.png" alt="computer">
-                  <h3>Design & Development</h3>
-                  <p class="skills__one__text">I started learning to code as a hobby and because it interesting. Over time, I have got to master the skill and improve in my coding journey, with basic knowlodge of <strong>UI/UX</strong> <br>
-                    Some of the technologies I use include: <strong>HTML, CSS, BOOTSTRAP, SASS, JAVASCRIPT, GIT & GITHUB</strong>.
-                  </p>
-                </div>
-  
-                <div class="certification">
-                  <h3>CERTIFICATION & TRAINING</h3>
-                  <ul>
-                      <li>Chemicals and effects on health - John Hopkins University Via Cousera</li>
-                      <li>Data Analytics Full Course - Cousera</li>
-                      <li>Complete Web Development Bootcamp - Udemy</li>
-                      <li>Frontend Engineering - Stutern</li>
-                  </ul>
+                  <img
+                    class="skills__one__img"
+                    src="./assets/images/computer.png"
+                    alt="computer"
+                  />
+                  <div>
+                    <h3>Design & Development</h3>
+                    <p class="skills__one__text">
+                      I started learning to code as a hobby and because it
+                      interesting. Over time, I have got to master the skill and
+                      improve in my coding journey, with basic knowlodge of
+                      <strong>UI/UX</strong> <br />
+                      Some of the technologies I use include:
+                      <strong
+                        >HTML, CSS, BOOTSTRAP, SASS, JAVASCRIPT, GIT &
+                        GITHUB</strong
+                      >.
+                    </p>
+                  </div>
                 </div>
               </div>
 
               <div class="section__two__skills">
+                <div class="certification">
+                  <h3>CERTIFICATION & TRAINING</h3>
+                  <ul>
+                    <li>
+                      Chemicals and effects on health - John Hopkins University
+                      Via Cousera
+                    </li>
+                    <li>Data Analytics Full Course - Cousera</li>
+                    <li>Complete Web Development Bootcamp - Udemy</li>
+                    <li>Frontend Engineering - Stutern</li>
+                  </ul>
+                </div>
+                <div>
                   <h3>RELEVANT SKILLS</h3>
                   <ul>
-                      <li>A critical thinker with exceptional creative problem solving skills</li>
-                      <li>Leadership Instincts</li>
-                      <li>Team collaboration</li>
-                      <li>Technical understanding of agile software development methodology</li>
-                      <li>Strong interpersonal communication skills</li>
+                    <li>
+                      A critical thinker with exceptional creative problem
+                      solving skills
+                    </li>
+                    <li>Leadership Instincts</li>
+                    <li>Team collaboration</li>
+                    <li>
+                      Technical understanding of agile software development
+                      methodology
+                    </li>
+                    <li>Strong interpersonal communication skills</li>
                   </ul>
+                </div>
               </div>
             </div>
-            <hr>
-      
+            <hr />
+
             <div id="contact">
               <h2>Get In Touch</h2>
-              <p class="contact-message">Thank you for visiting my website! If you have any questions or feedback, please feel free to get in touch.</p>
-              <a class="btn btn-outline-secondary" href="mailto:ekehvictoria72@email.com">CONTACT ME</a>
+              <p class="contact-message">
+                Thank you for visiting my website! If you have any questions or
+                feedback, please feel free to get in touch.
+              </p>
+              <a
+                class="btn btn-outline-secondary"
+                href="mailto:ekehvictoria72@email.com"
+                >CONTACT ME</a
+              >
             </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="bottom-container">
+          <a
+            class="footer-link"
+            href="https://www.linkedin.com/in/ekeh-victoria-b45a8823a/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a class="footer-link" href="https://twitter.com/Vicky_la_miel"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a class="footer-link" href="https://github.com/Vickylamiel"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <br />
+          <p class="copyright">
+            <span>©</span> <span>2023 Victoria Ekeh.</span>
+          </p>
         </div>
-      </section>
-    </main>
+      </footer>
+    </div>
 
-
-
-      
-    
-    <footer>
-      <div class="bottom-container">
-        <a class="footer-link" href="https://www.linkedin.com/in/ekeh-victoria-b45a8823a/"><i class="fa-brands fa-linkedin"></i></a>
-        <a class="footer-link" href="https://twitter.com/Vicky_la_miel"><i class="fa-brands fa-twitter"></i></a>
-        <a class="footer-link" href="https://github.com/Vickylamiel"><i class="fa-brands fa-github"></i></a> <br>
-        <p class="copyright">© 2023 Victoria Ekeh.</p>
-      </div>
-    </footer>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/bf88dedc0b.js" crossorigin="anonymous"></script>
-  <script src="./app.js"></script>
-      
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/bf88dedc0b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
 </html>
